@@ -1,6 +1,7 @@
 package net.arsenalnetwork;
 
 import net.arsenalnetwork.frame.MainFrame;
+import net.arsenalnetwork.technic.GetModpack;
 import net.arsenalnetwork.utilities.Constants;
 import net.arsenalnetwork.utilities.LauncherLogger;
 import net.arsenalnetwork.utilities.OSChecker;
@@ -22,6 +23,12 @@ public class LauncherMain {
     public static void main(String[] args) {
         getFrame();
         OSChecker.checkOS();
+
+        try {
+            GetModpack.getPack("wizardz-conquest-tech-magic");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     /**
