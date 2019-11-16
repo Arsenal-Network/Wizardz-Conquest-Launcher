@@ -1,6 +1,7 @@
 package net.arsenalnetwork;
 
 import net.arsenalnetwork.frame.MainFrame;
+import net.arsenalnetwork.mojang.MojangProfile;
 import net.arsenalnetwork.technic.GetModpack;
 import net.arsenalnetwork.utilities.Constants;
 import net.arsenalnetwork.utilities.LauncherLogger;
@@ -29,6 +30,8 @@ public class LauncherMain {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        MojangProfile.getAuthentication("test", "test");
     }
 
     /**

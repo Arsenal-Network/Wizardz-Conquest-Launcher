@@ -9,9 +9,9 @@ public class OSChecker {
      */
     public static void checkOS() {
         if (isWindows()) {
-            System.out.println("You are currently running the launcher on windows.");
+            System.out.println("You are currently running the launcher on a windows OS system.");
         } else if (isMac()) {
-            System.out.println("You are currently running the launcher on mac.");
+            System.out.println("You are currently running the launcher on a mac OS system.");
         } else if (isUnix()) {
             System.out.println("You are currently running the launcher on a non supported OS system. Program Exiting...");
             System.exit(5);

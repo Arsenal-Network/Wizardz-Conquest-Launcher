@@ -38,7 +38,7 @@ public class MainFrame extends JPanel {
                 if (RenderTextTypeBox.jTextField.getText().equals("Hello")) {
                     System.out.println("Hello back person!");
                 } else if (RenderTextTypeBox.jTextField.getText().isEmpty()) {
-                    System.out.println("Text Field is empty!");
+                    //System.out.println("Text Field is empty!");
                 }
             }
         });
