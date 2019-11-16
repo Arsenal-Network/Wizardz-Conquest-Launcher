@@ -3,6 +3,7 @@ package net.arsenalnetwork;
 import net.arsenalnetwork.frame.MainFrame;
 import net.arsenalnetwork.mojang.MojangProfile;
 import net.arsenalnetwork.technic.GetModpack;
+import net.arsenalnetwork.technic.ModpackDownload;
 import net.arsenalnetwork.utilities.Constants;
 import net.arsenalnetwork.utilities.LauncherLogger;
 import net.arsenalnetwork.utilities.OSChecker;
@@ -27,6 +28,12 @@ public class LauncherMain {
 
         try {
             GetModpack.getPack("wizardz-conquest-tech-magic");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            ModpackDownload.getMods();
         } catch (IOException e) {
             e.printStackTrace();
         }
