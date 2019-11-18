@@ -1,5 +1,6 @@
 package net.arsenalnetwork;
 
+import net.arsenalnetwork.files.LauncherFiles;
 import net.arsenalnetwork.frame.MainFrame;
 import net.arsenalnetwork.mojang.MojangProfile;
 import net.arsenalnetwork.technic.GetModpack;
@@ -39,6 +40,8 @@ public class LauncherMain {
         }
 
         MojangProfile.getAuthentication("test", "test");
+
+        LauncherFiles.downloadLauncherFiles();
     }
 
     /**
@@ -53,6 +56,7 @@ public class LauncherMain {
         frm.setResizable(false);
         frm.setVisible(true);
         frm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frm.setLocationRelativeTo(null);
 
         // Sets the Icon from the resources
         URL res = LauncherMain.class.getClassLoader().getResource("icon.png");

@@ -8,10 +8,11 @@ import net.chris54721.openmcauthenticator.responses.AuthenticationResponse;
 
 public class MojangProfile {
 
-    private String name;
-    private String email;
-    private String password;
-
+    /**
+     * Allows the user to log in threw their username and password and this method checks if the account exists.
+     * @param username Mojang Account Username/Email
+     * @param password Mojang Account Password
+     */
     public static void getAuthentication(String username, String password) {
         try {
             AuthenticationResponse authResponse = OpenMCAuthenticator.authenticate(username, password);
@@ -24,15 +25,7 @@ public class MojangProfile {
     }
 
     public String getName() {
-        return name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public String getPassword() {
-        return password;
+        return null; // TODO If the user has passed getAuthentication then display a name on the frame
     }
 
 }

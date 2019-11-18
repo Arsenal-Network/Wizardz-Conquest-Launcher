@@ -7,7 +7,7 @@ public class Constants {
     /**
      * Frame width & height sizes.
      */
-    public static final int displayWidth = 1600;
-    public static final int displayHeight = 900;
+    public static final int displayWidth = 1200;
+    public static final int displayHeight = 700;
 
 }
